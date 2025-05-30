@@ -1,6 +1,6 @@
 
 # 🚗 Car Price Prediction Web App
-![App](path-ke-gambar.jpg "Optional title")
+![App](https://github.com/Reswn/Car-Price-Prediction-Application/blob/main/screencapture-127-0-0-1-5000-2025-05-29-21_38_42.png?raw=true)
 
 Aplikasi ini memprediksi harga mobil berdasarkan input spesifikasi kendaraan seperti tahun produksi, jarak tempuh, jenis bahan bakar, transmisi, dan lainnya. Proyek ini dibangun menggunakan HTML, CSS untuk antarmuka frontend, dan Python (`Flask`) + model Machine Learning untuk logika prediksi di backend.
 
