@@ -1,0 +1,122 @@
+/* Reset sedikit padding dan margin default */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #80baf8 !important; /* warna gelap sesuai bg-dark */
+  color: #93d9f9;
+}
+
+/* Container utama: center semua isi secara horisontal */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px; /* beri ruang di atas bawah */
+  background-color: #80baf8 !important;
+}
+
+/* Card styling: kotak utama */
+.card {
+  background-color: #80baf8;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  padding: 30px 25px;
+  color: #353b53;
+  width: 100%;
+  max-width: 700px; /* batasi lebar card */
+  text-align: center; /* center teks di card */
+}
+/* Header judul */
+.card-header {
+  background-color: #58b3f8 !important; /* biru cerah */
+  padding: 15px 0; /* beri ruang atas bawah supaya enak */
+  border-radius: 15px 15px 0 0; /* bulatkan sudut atas kiri kanan */
+  text-align: center; /* center isi header */
+}
+
+.card-header h1 {
+  color: #fff; /* teks putih biar kontras */
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin: 0; /* hilangkan margin default */
+}
+/* Form label */
+label {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #0b4c77;
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+
+  letter-spacing: 0.05em;
+}
+
+.form-control::placeholder {
+  color: #85baef;
+  font-style: italic;
+}
+
+.form-control:focus {
+  border-color: #00d4ff;
+  background: linear-gradient(145deg, #93c9ea, #93c9ea);
+  color: #ffffff;
+  box-shadow: 0 0 12px #00d4ff, inset 2px 2px 7px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+/* Tombol */
+.btn-primary {
+  background-color: #4482e7 !important; /* warna biru cerah */
+  border: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 14px 20px; /* beri padding kiri kanan agar tombol lebih proporsional */
+  border-radius: 14px;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+  width: auto; /* biar tidak selalu 100%, sesuaikan dengan isi */
+  max-width: 360px;
+  display: block;
+  margin: 20px auto 0 auto; /* margin atas 20px, center secara horizontal */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(97, 154, 246, 0.6); /* sesuaikan warna shadow dengan bg */
+  color: white; /* teks putih supaya kontras */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  user-select: none; /* agar teks tidak bisa di-select saat klik */
+}
+
+.btn-primary:hover {
+  background-color: #3a72e8; /* biru hover sedikit lebih gelap */
+  box-shadow: 0 0 25px #3a72e8, 0 4px 15px rgba(58, 114, 232, 0.7);
+}
+
+/* Prediksi hasil */
+#prediction {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0a4186;
+  min-height: 48px; /* supaya ga lompat waktu hasil keluar */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Responsive layout spacing */
+@media (max-width: 768px) {
+  .btn-primary {
+    width: 90% !important; /* full width di layar kecil */
+    max-width: none; /* hilangkan max-width supaya lebar fleksibel */
+  }
+}
+
+/* Hilangkan padding default Bootstrap pada col-md-10 */
+.col-md-10 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
